@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>NodeMCU Car Control Panel</title>
+    <link href="./style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <span class="toptext">NodeMCU Car Control Panel</span>
+      </div>
+      <div class="content">
+        <div class="panels">
+          <div class="empty2"></div>
+          <div class="ultrasonicsensorspanels">
+            <div class="ultrasonicsensorspanel">
+              <span>Left Sensor</span>
+              <span>[DISTANCE]</span>
+              <span>[STATUS]</span>
+            </div>
+            <div class="ultrasonicsensorspanel">
+              <span>Middle Sensor</span>
+              <span>[DISTANCE]</span> 
+              <span>[STATUS]</span>
+            </div>
+            <div class="ultrasonicsensorspanel">
+              <span>Right Sensor</span>
+              <span>[DISTANCE]</span>
+              <span>[STATUS]</span>
+            </div>
+          </div>
+          <div class="lcdpanels">
+            <div class="lcdpanel">
+              <input type="text" class="inputtextfield" placeholder="Hello" maxlength="16">
+              <input type="text" class="inputtextfield" placeholder="World!!" maxlength="16">
+            </div>
+            <button class="lcdsendbutton">SEND</button>
+          </div>
+          <div class="servocontrol">
+            <button class="servobutton">Look Left</button>
+            <div class="servostatus">
+              <span>Servo Rotation</span>
+              <span>[Servo Value]</span>
+            </div>
+            <button class="servobutton">Look Right</button>
+          </div>
+          <div class="empty"></div>
+        </div>
+        <div class="panel2">
+          <div class="speedcontrolLabel">
+            <span>Speed Control</span>
+            <span>[SLIDER_VALUE]</span>
+          </div>
+          <div class="speedcontrolPanel">
+            <span class="slidertext"> 0 </span>
+            <input class="slider" type="range" min="0" max="255" value="100">
+            <span class="slidertext"> 255 </span>
+          </div>
+          <div class="movementPanel">
+            <button class="button top-left">↖</button>
+            <button class="button top">↑</button>
+            <button class="button top-right">↗</button>
+            <button class="button left">↪️</button>
+            <button class="button middle">Stop</button>
+            <button class="button right">↩️</button>
+            <button class="button bottom">↓</button>
+            <button class="button bottom-left">↙</button>
+            <button class="button bottom-right">↘</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
